@@ -1,15 +1,13 @@
-// import "./App.css";
+import Header from "./components/Header";
 
 function App() {
-	const title = "Blog Post";
-	const body = " this is my blog post ";
 	return (
-		<div>
-			<h1>Hello from the app component</h1>
-			<p>
-				{body}, {title}
-			</p>
-		</div>
+		<>
+			<Header text="Hello" />
+			<div>
+				<h1>Hello from the app component</h1>
+			</div>
+		</>
 	);
 }
 

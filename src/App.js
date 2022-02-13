@@ -3,9 +3,8 @@ import Header from "./components/Header";
 import FeedbackList from "./components/FeeedbackList";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
-
+import AboutIconLink from "./components/AboutIconLink";
 import AboutPage from "./pages/AboutPage";
-import AboutIconLinks from "./components/AboutIconLinks";
 import { FeedbackProvider } from "./context/FeedbackContext";
 
 function App() {
@@ -13,11 +12,9 @@ function App() {
 		<FeedbackProvider>
 			<Router>
 				<Header />
-
 				<div className="container">
 					<Routes>
 						<Route
-							exact
 							path="/"
 							element={
 								<>
@@ -30,7 +27,8 @@ function App() {
 
 						<Route path="/about" element={<AboutPage />} />
 					</Routes>
-					<AboutIconLinks />
+
+					<AboutIconLink />
 				</div>
 			</Router>
 		</FeedbackProvider>
